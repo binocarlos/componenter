@@ -18,7 +18,7 @@ var Componenter = require('componenter')
 var project = Componenter('/my/project')
 
 // this will remove existing components/build folder for a fresh install
-project('/my/project', true, function(err){
+project(true, function(err){
 
 	// /my/project/components and /my/project/build now exists
 })
