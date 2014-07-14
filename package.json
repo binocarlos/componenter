@@ -1,0 +1,31 @@
+{
+  "name": "componenter",
+  "version": "0.0.0",
+  "description": "Programatically install and build components",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/binocarlos/componenter"
+  },
+  "keywords": [
+    "component",
+    "build",
+    "install"
+  ],
+  "author": "Kai Davenport",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/binocarlos/componenter/issues"
+  },
+  "homepage": "https://github.com/binocarlos/componenter",
+  "devDependencies": {
+    "tape": "^2.13.3"
+  },
+  "dependencies": {
+    "wrench": "^1.5.8",
+    "component": "^0.19.9"
+  }
+}
