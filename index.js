@@ -4,6 +4,7 @@ var cp = require('child_process')
 var path = require('path')
 
 function installComponent(folder, autoRemove, done){
+	
 	if(!fs.existsSync(path.join(folder, 'component.json'))){
 		return done('component.json does not exist')
 	}
@@ -76,8 +77,8 @@ module.exports = function(path){
 		})
 	}
 
-	make.install = installComponent
-	make.build = buildComponent
+	make.install = install
+	make.build = build
 
 	return make
 }
