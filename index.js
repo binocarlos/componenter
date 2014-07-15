@@ -3,6 +3,8 @@ var wrench = require('wrench')
 var cp = require('child_process')
 var path = require('path')
 
+var osx = /darwin/.test(process.platform)
+
 function installComponent(folder, autoRemove, done){
 	
 	if(!fs.existsSync(path.join(folder, 'component.json'))){
@@ -39,6 +41,10 @@ function buildComponent(folder, autoRemove, done){
 		path.resolve(__dirname + '/node_modules/component/bin/component-build'),
 		'-v'
 	]
+
+	if(!osx){
+		args.push('-c')
+	}
 
 	var install = cp.spawn('node', args, {
 		stdio:'inherit',
