@@ -1,6 +1,6 @@
 {
   "name": "componenter",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Programatically install and build components",
   "main": "index.js",
   "scripts": {
