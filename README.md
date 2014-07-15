@@ -39,19 +39,19 @@ project.install(function(err){
 
 ## api
 
-### `var project = Componenter(folderPath)`
+#### `var project = Componenter(folderPath)`
 
 Create a new project by passing a folder path and the folder contains a component.json
 
-### `project(autoRemove)`
+#### `project(autoRemove)`
 
 Run project.install then project.build - autoRemove will delete folders before each step
 
-### `project.install(autoRemove)`
+#### `project.install(autoRemove)`
 
 Run `component install` in the project folder - autoRemove will remove the components folder and result in a fresh install (i.e. pulling the latest components from github)
 
-### `project.build(autoRemove)`
+#### `project.build(autoRemove)`
 
 Run `component build` in the project folder - autoRemove will remove the build folder
 
